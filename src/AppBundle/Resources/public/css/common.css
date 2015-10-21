@@ -1,0 +1,78 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background: url("/bundles/app/images/bg1.png");
+    height: 100%;
+    width: 100%;
+    -moz-background-size: 100% 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100% 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100% 100%; /* Opera 9.6+ */
+    background-size: 100% 100%; /* Современные браузеры */
+}
+.main2{
+    background: url("/bundles/app/images/bg2.png");
+    height: 100%;
+    width: 100%;
+    -moz-background-size: 100% 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100% 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100% 100%; /* Opera 9.6+ */
+    background-size: 100% 100%; /* Современные браузеры */
+}
+.main-box{
+    /*margin-top: 30px;*/
+    width: 100%;
+    background: url("/bundles/app/images/img_1.png") no-repeat;
+    background-position: center top;
+    height: 100%;
+}
+.main-logo{
+    text-align: center;
+    padding-top: 280px;
+}
+.main-menu{
+    margin-top: 30px;
+    text-align: center;
+}
+nav ul li{
+    color: #ffffff;
+    display: inline-block;
+    padding: 5px 30px;
+    font-size: 20px;
+}
+nav ul li a{
+    color: #ffffff;
+}
+
+nav ul li a:hover{
+    color: #ffffff;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+/** **************************  */
+
+.contacts-box{
+    /*margin-top: 30px;*/
+    width: 100%;
+    background-position: center top;
+    height: 100%;
+}
+.contacts-body{
+    padding-top: 200px;
+    background: url("/bundles/app/images/img_2.png") no-repeat;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    height: 800px;
+}
+#globus{
+    margin: 0 auto;
+}
+.black-line{
+    margin: 10px;
+}
