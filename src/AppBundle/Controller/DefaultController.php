@@ -37,7 +37,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/about", name="order")
+     * @Route("/about", name="about")
      * @Template("AppBundle:Default:about.html.twig")
      */
     public function aboutAction(Request $request)

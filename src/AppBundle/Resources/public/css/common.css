@@ -1,6 +1,7 @@
 body, html{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 .main{
     background: url("/bundles/app/images/bg1.png");
@@ -68,11 +69,33 @@ nav ul{
     width: 600px;
     margin: 0 auto;
     text-align: center;
-    height: 800px;
+    height: 1285px;
 }
 #globus{
     margin: 0 auto;
 }
 .black-line{
     margin: 10px;
+}
+.about-text{
+    color: #ffffff;
+    width: 600px;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+.about-image{
+    position: absolute;
+    left: 0;
+    background: url("/bundles/app/images/img_4.png");
+    width: 530px;
+    height: 195px;
+}
+#share-btn{
+    margin-top: 75px;
+    margin-left: 70px;
+}
+a.active{
+    color: #d4f600;
 }

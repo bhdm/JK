@@ -1,6 +1,21 @@
 {% extends '@App/layout.html.twig' %}
 
 {% block body %}
-
+<div class="container-fluid main2">
+    <div class="contacts-box">
+        <div class="main-menu">
+            <img src="{{ asset('bundles/app/images/line.png') }}">
+            <nav>
+                <ul>
+                    <li><a href="{{ path('about') }}">О НАС</a></li>
+                    <li><a href="#">ГАЛЕРЕЯ</a></li>
+                    <li><a href="#">ПОРТФОЛИО</a></li>
+                    <li><a href="{{ path('contacts') }}" >КОНТАКТЫ</a></li>
+                    <li><a href="{{ path('order') }}"  class="active">СДЕЛАТЬ ЗАКАЗ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
 {% endblock %}
 
