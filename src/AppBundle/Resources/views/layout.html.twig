@@ -2,10 +2,23 @@
 <head>
     <link rel="stylesheet" href="{{ asset('bundles/app/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('bundles/app/css/common.css') }}">
+    <script src="{{ asset('bundles/app/js/jquery-1.11.3.min.js') }}"></script>
     <script src="{{ asset('bundles/app/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('bundles/app/js/jquery.smoothState.min.js') }}"></script>
 </head>
 
 <body>
+<div id="main">
     {% block body %}{% endblock %}
+</div>
 </body>
+
+
+<script>
+    $(document).ready(function(){
+        $('nav ul li a').click(function () {
+            
+        });
+    });
+</script>
 </html>

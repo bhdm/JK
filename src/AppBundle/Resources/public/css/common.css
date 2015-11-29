@@ -1,3 +1,6 @@
+*, *:hover, *:active, *:focus{
+    outline: none;
+}
 body, html{
     margin: 0;
     padding: 0;
@@ -98,4 +101,51 @@ nav ul{
 }
 a.active{
     color: #d4f600;
+}
+li.active{
+    border-top: 3px solid #444;
+}
+nav ul li:hover{
+    border-top: 3px solid #444;
+    /*margin-top: -3px;*/
+}
+.order-box{
+    /*position: absolute;*/
+    /*right: 50px;*/
+    /*top: 200px;*/
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 200px;
+}
+.form-control{
+    min-width: 400px;
+    background: #000;
+    opacity: 0.8;
+    border: 1px solid #FFF;
+    border-radius: 4px;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    height: 50px;
+}
+textarea.form-control{
+    height: 200px;
+}
+.btn-green{
+    background: #fff;
+    border: #333;
+}
+.btn-green:hover, .btn-green:active, .btn-green:focus{
+    background: #d4f600;
+    border: #6d5d08;
+    outline: none;
+}
+label{
+    color: #FFF;
+    text-transform: uppercase;
+}
+.input-line{
+    margin-top: 45px;
+    margin-left: 13px;
+    position: absolute;
+    z-index: 999;
 }

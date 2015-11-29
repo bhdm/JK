@@ -5,18 +5,7 @@
             <div class="main-logo">
                 <img src="{{ asset('bundles/app/images/logo.png') }}" id="logo">
             </div>
-            <div class="main-menu">
-                <img src="{{ asset('bundles/app/images/line.png') }}">
-                <nav>
-                    <ul>
-                        <li><a href="{{ path('about') }}">О НАС</a></li>
-                        <li><a href="#">ГАЛЕРЕЯ</a></li>
-                        <li><a href="#">ПОРТФОЛИО</a></li>
-                        <li><a href="{{ path('contacts') }}">КОНТАКТЫ</a></li>
-                        <li><a href="{{ path('order') }}">СДЕЛАТЬ ЗАКАЗ</a></li>
-                    </ul>
-                </nav>
-            </div>
+            {{ include('AppBundle::menu.html.twig') }}
         </div>
     </div>
 {% endblock %}

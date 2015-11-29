@@ -2,18 +2,7 @@
 {% block body %}
     <div class="container-fluid main2">
         <div class="contacts-box">
-            <div class="main-menu">
-                <img src="{{ asset('bundles/app/images/line.png') }}">
-                <nav>
-                    <ul>
-                        <li><a href="{{ path('about') }}" class="active">О НАС</a></li>
-                        <li><a href="#">ГАЛЕРЕЯ</a></li>
-                        <li><a href="#">ПОРТФОЛИО</a></li>
-                        <li><a href="{{ path('contacts') }}">КОНТАКТЫ</a></li>
-                        <li><a href="{{ path('order') }}">СДЕЛАТЬ ЗАКАЗ</a></li>
-                    </ul>
-                </nav>
-            </div>
+            {{ include('AppBundle::menu.html.twig') }}
             <div class="about-body">
                 <div class="about-text">
                     О нас<br />
