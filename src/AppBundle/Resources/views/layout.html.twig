@@ -16,8 +16,26 @@
 
 <script>
     $(document).ready(function(){
-        $('nav ul li a').click(function () {
-            
+        $('body').on('click','nav ul li a', function(){
+            if ($(this).attr('id') == 'mainpage'){
+                return true;
+            }
+            var url = $(this).attr('href');
+            $.ajax({
+                type: "POST",
+                url: url,
+                success: function(html){
+//                    $('body').css('overflow', 'hidden');
+//                    $('body').css('position', 'absolute');
+                    var displayY = $('body').css('height');
+                    $('#main').append(html);
+                    $('#main').animate({'marginTop': '-'+displayY}, function(){
+                        $('#main').children('div').eq(0).remove();
+                        $('#main').css('margin-top', '0');
+                    });
+                }
+            });
+            return false;
         });
     });
 </script>

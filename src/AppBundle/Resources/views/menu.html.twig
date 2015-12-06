@@ -1,13 +1,14 @@
+{% set active = "class=active" %}
 <div class="main-menu">
     <img src="{{ asset('bundles/app/images/line.png') }}">
     <nav>
         <ul>
-            <li class="active"><a href="{{ path('homepage') }}" class="active">ГЛАВНАЯ</a></li>
-            <li><a href="{{ path('about') }}">О НАС</a></li>
+            <li {{ page == 'main' ? active }} ><a {{ page == 'main' ? active }} href="{{ path('homepage') }}" id="mainpage">ГЛАВНАЯ</a></li>
+            <li {{ page == 'about' ? active }}><a {{ page == 'about' ? active }} href="{{ path('about') }}">О НАС</a></li>
             {#<li><a href="#">ГАЛЕРЕЯ</a></li>#}
-            <li><a href="#">ПОРТФОЛИО</a></li>
-            <li><a href="{{ path('contacts') }}">КОНТАКТЫ</a></li>
-            <li><a href="{{ path('order') }}">СДЕЛАТЬ ЗАКАЗ</a></li>
+            <li {{ page == 'protfolio' ? active }}><a {{ page == 'protfolio' ? active }} href="{{ path('portfolio') }}">ПОРТФОЛИО</a></li>
+            <li {{ page == 'contacts' ? active }}><a {{ page == 'contacts' ? active }} href="{{ path('contacts') }}">КОНТАКТЫ</a></li>
+            <li {{ page == 'order' ? active }}><a {{ page == 'order' ? active }} href="{{ path('order') }}">СДЕЛАТЬ ЗАКАЗ</a></li>
         </ul>
     </nav>
 </div>

@@ -15,7 +15,7 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        return [];
+        return ['page' => 'main'];
     }
 
     /**
@@ -24,7 +24,7 @@ class DefaultController extends Controller
      */
     public function contactsAction(Request $request)
     {
-        return [];
+        return ['page' => 'contacts'];
     }
 
     /**
@@ -33,7 +33,7 @@ class DefaultController extends Controller
      */
     public function orderAction(Request $request)
     {
-        return [];
+        return ['page' => 'order'];
     }
 
     /**
@@ -42,6 +42,16 @@ class DefaultController extends Controller
      */
     public function aboutAction(Request $request)
     {
-        return [];
+        return ['page' => 'about'];
     }
+
+    /**
+     * @Route("/portfolio", name="portfolio")
+     * @Template("AppBundle:Default:portfolio.html.twig")
+     */
+    public function portfolioAction(Request $request)
+    {
+        return ['page' => 'about'];
+    }
+
 }

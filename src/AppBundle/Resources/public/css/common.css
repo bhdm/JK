@@ -99,14 +99,17 @@ nav ul{
     margin-top: 75px;
     margin-left: 70px;
 }
-a.active{
+a.active, a:active{
     color: #d4f600;
 }
+a:focus{
+    color: inherit;
+}
 li.active{
-    border-top: 3px solid #444;
+    border-top: 6px solid #333;
 }
 nav ul li:hover{
-    border-top: 3px solid #444;
+    border-top: 6px solid #333;
     /*margin-top: -3px;*/
 }
 .order-box{
@@ -131,7 +134,7 @@ textarea.form-control{
     height: 200px;
 }
 .btn-green{
-    background: #fff;
+    background: #d4f600;
     border: #333;
 }
 .btn-green:hover, .btn-green:active, .btn-green:focus{
@@ -148,4 +151,8 @@ label{
     margin-left: 13px;
     position: absolute;
     z-index: 999;
+}
+textarea:focus, input:focus{
+    opacity: 1;
+    color: #FFFFFF;
 }
