@@ -1,6 +1,9 @@
 *, *:hover, *:active, *:focus{
     outline: none;
 }
+*{
+    font-family: Helvetica;
+}
 body, html{
     margin: 0;
     padding: 0;

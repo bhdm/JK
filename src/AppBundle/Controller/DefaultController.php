@@ -51,7 +51,7 @@ class DefaultController extends Controller
      */
     public function portfolioAction(Request $request)
     {
-        return ['page' => 'about'];
+        return ['page' => 'portfolio'];
     }
 
 }
