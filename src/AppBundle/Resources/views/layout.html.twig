@@ -5,6 +5,7 @@
     <script src="{{ asset('bundles/app/js/jquery-1.11.3.min.js') }}"></script>
     <script src="{{ asset('bundles/app/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('bundles/app/js/jquery.smoothState.min.js') }}"></script>
+    <script src="{{ asset('bundles/app/js/inputmask.js') }}"></script>
 </head>
 
 <body>
@@ -16,6 +17,7 @@
 
 <script>
     $(document).ready(function(){
+
         $('body').on('click','nav ul li a', function(){
             if ($(this).attr('id') == 'mainpage'){
                 return true;
@@ -32,11 +34,36 @@
                     $('#main').animate({'marginTop': '-'+displayY}, function(){
                         $('#main').children('div').eq(0).remove();
                         $('#main').css('margin-top', '0');
+
+                        var x = $('ul li.active').position().left-15;
+                        var w = $('ul li.active').innerWidth();
+                        $('#line').stop().animate({'marginLeft': x, 'width': w},0);
+                        $('#line').css('display','block');
                     });
                 }
             });
             return false;
         });
+
+
+        var x = $('ul li.active').position().left-15;
+        var w = $('ul li.active').innerWidth();
+        $('#line').stop().animate({'marginLeft': x, 'width': w},0);
+        $('#line').css('display','block');
+
+        $('body').on('mouseenter','nav ul li', function(){
+                    var x = $(this).position().left-15;
+                    var w = $(this).innerWidth();
+                    $('#line').stop().animate({'marginLeft': x, 'width': w});
+        });
+
+        $('body').on('mouseleave','nav ul li', function(){
+            $('#line').stop();
+            var x = $('ul li.active').position().left-15;
+            var w = $('ul li.active').innerWidth();
+            $('#line').stop().animate({'marginLeft': x, 'width': w});
+        });
+
     });
 </script>
 </html>

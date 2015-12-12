@@ -6,16 +6,25 @@
 
         <div class="order-box">
             <img src="{{ asset('bundles/app/images/input-line.png') }}" class="input-line">
-            <input type="text" class="form-control" placeholder="Введите имя">
+            <input type="text" class="form-control" placeholder="Ваше имя" name="name" required>
             <br />
             <img src="{{ asset('bundles/app/images/input-line.png') }}" class="input-line">
-            <input type="text" class="form-control" placeholder="Введите имя">
+            <input type="text" class="form-control" placeholder="E-mail" name="email" required>
+            <br />
+            <img src="{{ asset('bundles/app/images/input-line.png') }}" class="input-line">
+            <input type="text" class="form-control" placeholder="Телефон" name="phone" id="phone" required>
             <br />
             <img src="{{ asset('bundles/app/images/input-line.png') }}" class="input-line" style="margin-top: 194px;">
-            <textarea placeholder="Краткое описание " class="form-control"></textarea>
+            <textarea placeholder="Краткое описание " class="form-control" name="desc"></textarea>
             <br />
             <button class="btn btn-lg btn-green">Отправить</button>
         </div>
     </div>
 </div>
-{#{% endblock %}#}
+
+<script>
+//    $(document).ready(function(){
+//        $('input[name=phone]').Inputmask({"mask": "+7 (999) 999-9999"});
+//    })
+</script>
+

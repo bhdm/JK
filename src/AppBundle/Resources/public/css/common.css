@@ -45,12 +45,17 @@ a:hover{
     margin-top: 30px;
     text-align: center;
 }
+nav ul{
+    font-size: 0;
+}
 nav ul li{
     color: #ffffff;
     display: inline-block;
     padding: 5px 30px;
     font-size: 20px;
     margin: 0;
+    text-align: center;
+    border-top: 2px solid #333;
 }
 nav ul li a{
     color: #ffffff;
@@ -115,10 +120,10 @@ a:focus{
     color: inherit;
 }
 li.active{
-    border-top: 6px solid #333;
+    /*border-top: 6px solid #333;*/
 }
 nav ul li:hover{
-    border-top: 6px solid #333;
+    /*border-top: 6px solid #333;*/
     /*margin-top: -3px;*/
 }
 .order-box{
@@ -164,4 +169,11 @@ label{
 textarea:focus, input:focus{
     opacity: 1;
     color: #FFFFFF;
+}
+#line{
+    width: 150px;
+    height: 4px;
+    background: #333333;
+    margin-bottom: -5px;
+    display: none;
 }

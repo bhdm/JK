@@ -1,7 +1,8 @@
 {% set active = "class=active" %}
 <div class="main-menu">
-    <img src="{{ asset('bundles/app/images/line.png') }}">
+    {#<img src="{{ asset('bundles/app/images/line.png') }}">#}
     <nav>
+        <div id="line"></div>
         <ul>
             <li {{ page == 'main' ? active }} ><a {{ page == 'main' ? active }} href="{{ path('homepage') }}" id="mainpage">ГЛАВНАЯ</a></li>
             <li {{ page == 'about' ? active }}><a {{ page == 'about' ? active }} href="{{ path('about') }}">О НАС</a></li>
