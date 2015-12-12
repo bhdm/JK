@@ -52,9 +52,9 @@
         $('#line').css('display','block');
 
         $('body').on('mouseenter','nav ul li', function(){
-                    var x = $(this).position().left-15;
+                    var x = $(this).position().left;
                     var w = $(this).innerWidth();
-                    $('#line').stop().animate({'marginLeft': x, 'width': w});
+                    $('#line').stop().animate({'marginLeft': x, 'width': w}).animate({'marginLeft': x-15});
         });
 
         $('body').on('mouseleave','nav ul li', function(){
