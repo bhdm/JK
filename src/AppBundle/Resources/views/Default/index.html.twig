@@ -142,15 +142,16 @@
                     'color': '#FFF'
                 },300,function(){
                     $('.main-menu').css('background', '#000');
+                    $('#line').css('background', '#FFF');
+                    $('nav ul li').css('border-top','1px solid #FFF');
                 });
             }else{
-                console.log('1');
                 $('.main-menu').css('position', 'absolute');
-                console.log('2');
                 $('nav ul li a').css('color','#000');
-                console.log('3');
+                $('nav ul li').css('border-top','1px solid #333');
                 $('.main-menu').css('background', 'none');
-                console.log('4');
+                $('#line').css('background', '#333');
+
                 $('.main-menu').stop().animate({
                     'top': '400',
                     'marginTop': '30px',
