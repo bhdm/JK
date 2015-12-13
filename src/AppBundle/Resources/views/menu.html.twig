@@ -4,12 +4,12 @@
     <nav>
         <div id="line"></div>
         <ul>
-            <li {{ page == 'main' ? active }} ><a {{ page == 'main' ? active }} href="{{ path('homepage') }}" id="mainpage">ГЛАВНАЯ</a></li>
-            <li {{ page == 'about' ? active }}><a {{ page == 'about' ? active }} href="{{ path('about') }}">О НАС</a></li>
+            <li {{ page == 'main' ? active }} ><a {{ page == 'main' ? active }} href="#main" id="mainpage">ГЛАВНАЯ</a></li>
+            <li {{ page == 'about' ? active }}><a {{ page == 'about' ? active }} href="#about">О НАС</a></li>
             {#<li><a href="#">ГАЛЕРЕЯ</a></li>#}
-            <li {{ page == 'portfolio' ? active }}><a {{ page == 'portfolio' ? active }} href="{{ path('portfolio') }}">ПОРТФОЛИО</a></li>
-            <li {{ page == 'contacts' ? active }}><a {{ page == 'contacts' ? active }} href="{{ path('contacts') }}">КОНТАКТЫ</a></li>
-            <li {{ page == 'order' ? active }}><a {{ page == 'order' ? active }} href="{{ path('order') }}">СДЕЛАТЬ ЗАКАЗ</a></li>
+            <li {{ page == 'portfolio' ? active }}><a {{ page == 'portfolio' ? active }} href="#portfolio">ПОРТФОЛИО</a></li>
+            <li {{ page == 'contacts' ? active }}><a {{ page == 'contacts' ? active }} href="#contacts">КОНТАКТЫ</a></li>
+            <li {{ page == 'order' ? active }}><a {{ page == 'order' ? active }} href="#order">СДЕЛАТЬ ЗАКАЗ</a></li>
         </ul>
     </nav>
 </div>
